@@ -36,7 +36,7 @@ const Home: React.FC = () => {
           <section
             key={section.id}
             id={section.id}
-            className="content-section min-h-screen mt-10 mb-10"
+            className="content-section mt-20 mb-20"
           >
             <div className="max-w-7xl">
               <div className="flex justify-start mb-12 border-b-1 border-bottom-white">
