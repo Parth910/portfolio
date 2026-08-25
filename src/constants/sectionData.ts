@@ -1,88 +1,87 @@
 export const aboutData = {
-  description: "I’m a software engineer with over four years of experience building scalable and high-performance applications. I love solving complex engineering challenges, optimizing systems, and writing clean, maintainable code. Whether it’s backend development, database migrations, or system design, I focus on creating efficient and reliable solutions.",
-  description1: "Throughout my career, I’ve worked on a variety of projects, from video streaming platforms to AI-powered applications. I’ve led large-scale database migrations, built real-time processing systems, and optimized APIs to improve performance and scalability. My work has helped enhance product efficiency, reduce costs, and deliver a seamless user experience.",
-  description2: "I have expertise in JavaScript, TypeScript, Java, and Python, along with frameworks and tools like React, Node.js, Spring Boot, PostgreSQL, MongoDB, AWS, and Docker. I’m always learning and exploring new technologies to build better, more efficient software. Collaboration and problem-solving drive me, and I love turning ideas into impactful tech solutions.",
+  description: "I’m a Full Stack Engineer with 5+ years of experience building scalable, production-grade web applications end-to-end. At Redica Systems, I architect and ship Python/FastAPI backend services and React (TypeScript) frontends that help pharmaceutical companies stay compliant with regulatory and quality standards (GCP, GMP), reducing audit prep time and improving data accuracy across their compliance workflows.",
+  description1: "Throughout my career, I’ve worked on a variety of projects, from video streaming platforms to AI-powered applications. I’ve led large-scale database migrations, built high-throughput backend services and distributed systems, and optimized REST/microservice APIs to improve performance and scalability. My work has helped enhance product efficiency, reduce infrastructure costs, and deliver a seamless user experience.",
+  description2: "I have expertise in Python, TypeScript, and JavaScript, along with frameworks and tools like React, FastAPI, Node.js, PostgreSQL, MongoDB, AWS, and Docker. I've also embraced AI-assisted, agent-directed development with Claude Code, building custom skills and MCP integrations into my daily workflow. Collaboration and problem-solving drive me, and I love turning ideas into impactful tech solutions.",
   image: "/path/to/profile-image.jpg",
   skills: [
     {
-      category: "Languages",
-      items: ["JavaScript", "TypeScript", "C", "Java", "Python"]
+      category: "Languages & Frameworks",
+      items: ["Python", "TypeScript", "JavaScript"]
     },
     {
       category: "Frontend",
-      items: ["ReactJS", "NextJS", "CSS3", "HTML", "Redux"]
+      items: ["React", "Next.js", "HTML", "CSS3", "Redux", "Zustand"]
     },
     {
       category: "Backend",
-      items: ["NodeJS", "ExpressJS", "Spring Boot", "REST APIs"]
+      items: ["FastAPI", "Node.js", "Express.js", "REST APIs"]
     },
     {
       category: "Databases",
       items: ["MongoDB", "MySQL", "PostgreSQL"]
     },
     {
-      category: "Cloud & Tools",
-      items: ["AWS", "Git", "Docker", "Kafka"]
+      category: "DevOps & Cloud",
+      items: ["AWS (S3, EC2, SQS, Lambda, ECS, Fargate, EventBridge, RDS)", "Terraform", "Git", "Docker"]
     },
     {
-      category: "Other",
-      items: ["Data Structure & Algorithms", "Problem Solving",]
+      category: "AI-Assisted Development",
+      items: ["Claude Code", "Agentic Workflows", "Context Engineering", "MCP Integrations"]
     }
   ]
 };
 
 export const experienceData = [
   {
-    company: "Autonomic Health",
+    company: "Redica Systems",
     position: "Senior Software Engineer",
-    period: "Sept 2024 - Present",
+    period: "June 2025 - Present",
     responsibilities: [
-      "Executed a zero-downtime migration of 150M+ records from MongoDB to MySQL, improving data retrieval speed by 40% and cost by 50%",
-      "Engineered a React-based analytics dashboard, allowing internal teams to analyze and optimize AI model performance"
+      "Designed and drove an asynchronous bulk download architecture in Python/FastAPI to replace real-time processing for large exports (10k-50k records); stress-tested to 1k-2k concurrent users and shipped a fixed-batch drain-and-exit model with an EventBridge backstop, eliminating always-on Fargate costs (~$18/month/task) while sustaining burst load",
+      "Designed and built a cross-database data access layer using postgres_fdw to enable cross-database sorting and searching for a tenant-based architecture, running in production for 3+ months with zero incidents, later extended into an auto-provisioning reconciler that eliminates manual per-tenant setup",
+      "Root-caused and fixed a systemic async-processing defect that silently dropped up to 99.5% of a day's customer notifications, and built a daily automated verification system with 16,000+ production checks",
+      "Adopted spec-first, agent-directed development with Claude Code, built custom Claude Code skills (Jira ticket standardization, PR review) integrated via MCPs, and authored a global CLAUDE.md codifying team stack standards and reusable task context for agent-executed work"
     ],
-    technologies: ["Nodejs", "Python", "MongoDB", "MySQL", "AWS", "Postgresql", "Expressjs", "Docker"]
+    technologies: ["Python", "FastAPI", "React", "TypeScript", "PostgreSQL", "AWS Fargate", "EventBridge", "Claude Code", "MCP"]
+  },
+  {
+    company: "Mindwell Labs Inc",
+    position: "Senior Software Engineer",
+    period: "Oct 2024 - May 2025",
+    responsibilities: [
+      "Engineered and developed an end-to-end React and Node.js based analytics dashboard, optimizing AI model performance for internal teams",
+      "Executed a zero-downtime migration of 350M+ records from MongoDB to PostgreSQL using Python, improving query performance by 40% and reducing costs by 50%"
+    ],
+    technologies: ["React", "Nodejs", "Python", "MongoDB", "Postgresql"]
   },
   {
     company: "Mindwell Labs Inc",
     position: "Software Engineer",
     period: "Jan 2023 - Sept 2024",
     responsibilities: [
-      "Engineered a scalable backend for an AI-powered chatbot using ChatGPT APIs",
-      "Designed and implemented RESTful APIs reducing latency by 20%",
-      "Implemented a real-time notification system using a queue-based architecture",
-      "Engineered a Super Bowl Anxiety Prediction Campaign leveraging real-time data analysis"
+      "Designed and implemented REST APIs (Node.js) for seamless communication between the chatbot, data storage, and front-end applications, reducing API latency by 30% and ensuring efficient data flow",
+      "Developed a scalable React frontend for an AI-powered chatbot using ChatGPT APIs, delivering personalized insights on mental state, sleep patterns, and activity levels, increasing user engagement by 30%"
     ],
-    technologies: ["Nodejs", "OpenAI APIs", "RESTful APIs", "AWS", "Kafka", "Docker"]
+    technologies: ["Nodejs", "React", "OpenAI APIs", "RESTful APIs"]
   },
   {
     company: "Vidgyor Media Technologies",
     position: "Software Engineer",
-    period: "Oct 2020 - Dec 2022",
+    period: "June 2021 - Dec 2022",
     responsibilities: [
-      "Engineered and launched Video-on-Demand (VOD) and V-Live-Clip products",
-      "Built and optimized React UI components, reducing 50% load times",
-      "Engineered social sharing features for Twitter, YouTube, and Facebook",
-      "Developed and integrated developer APIs for VOD product integration"
+      "Launched two full-stack products using React, Node.js, and AWS that enabled scalable and efficient video processing, adopted by 10+ B2B clients across various countries",
+      "Built a high-performance queue system (AWS SQS) to efficiently clip, process, and transcode videos from live streams, reducing latency by 60%"
     ],
-    technologies: ["Nodejs","Expressjs", "MongoDB", "React", "Fffmpeg", "AWS"]
-  },
-  {
-    company: "Take10Trivia",
-    position: "Software Engineer",
-    period: "June 2020 - Oct 2020",
-    responsibilities: [
-      "Engineered and maintained the backend for the Take10Trivia gaming app"
-    ],
-    technologies: ["Java", "Spring Boot", "Golang", "AWS"]
+    technologies: ["Nodejs", "Expressjs", "MongoDB", "React", "AWS SQS", "AWS"]
   }
 ];
 
 export const projectsData = [
   {
     title: "Flapico",
-    description: "Working on a React-based UI for Flapico, providing an intuitive interface for prompt versioning, evaluation, and testing",
+    description: "Built a Prompt Versioning & Evaluation Dashboard using React with a clean, intuitive UI for managing AI prompts, versions, and test results, with real-time data synchronization via Supabase for seamless updates and collaborative editing",
     image: "/images/projects/flapico.png",
-    technologies: ["React", "Tailwind", "zustand"],
+    technologies: ["React", "React Query", "Zustand", "Supabase", "Jest"],
     links: [
       { type: "LinkedIn", url: "https://linkedin.com/in/Parth910" },
       { type: "GitHub", url: "https://github.com/Parth910" },

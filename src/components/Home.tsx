@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           </div>
           <div className="flex items-center justify-center mt-8 md:mt-16 text-center">
             <p className="text-base sm:text-lg md:text-lg lg:text-xl text-center max-w-2xl">
-             Experienced Full Stack Engineer with 4+ years building high-performance web applications from end to end. Specializes in React (JS/TypeScript) for pixel-perfect UIs and Node.js for scalable backend services, including REST/microservice APIs and database optimizations (SQL/NoSQL). Passionate about clean architecture and system reliability.
+              Passionate about building efficient, high-performance software. With 5+ years of experience, I specialize in full stack development, backend architecture, and system scalability.
             </p>
           </div>
         </div>
